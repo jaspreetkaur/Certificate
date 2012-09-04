@@ -1,0 +1,26 @@
+######################## Making of certificate ############################
+
+There are many ways to make a cerficate. But I take the reference from the following link for this:
+
+
+Requirements:
+1. Install LaTeX using command: sudo apt-get install texlive-full
+2. Need datatool.sty file or install this package for importing csv file.
+3. Need data.csv file which contain information retrieved from database.
+4. Need logo of an organisation or institue, background image and photo of the persons.
+5. Maximum and minimum size of photos is 1000*1000 pixels and 2100*2800 pixels repectively.
+6. certificate.tex which is main file and include the code.
+
+Here is code for certificate.tex:
+
+
+After this just compile certificate.tex file using command pdflatex certificate.
+This will produce multiple certificates according to your requirements.
+Here is the certificate.pdf
+
+If you want to convert pdf to jpg images, Here is the method
+1. First install imagemagic tool using command: sudo apt-get install imagemagick
+2. Run the following command to convert pdf file to jpg images:
+    
+    convert -density 300 certificate.pdf jpg/certificates.jpg
+
